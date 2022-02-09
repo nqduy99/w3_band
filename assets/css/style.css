@@ -26,8 +26,16 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46.5px;
     background-color: #000!important;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -88,12 +96,38 @@ html {
     background-color: #ccc;
 }
 
-#slider {
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    line-height: 46.5px;
+    padding: 0 16px 0 16px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
     
 }
 
-#content {
+#slider {
+    margin-top: 46.5px;
+    height: 400px;
+    background-color: aqua;
+}
 
+#content {
+    height: 1000px;
+    background-color: #ccc;
 }
 
 #footer {
