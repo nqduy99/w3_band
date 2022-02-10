@@ -9,6 +9,14 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
 /*
 1. Tu ngoai vao trong
 2. Tu tren xuong duoi
@@ -32,6 +40,7 @@ html {
     right: 0;
     height: 46.5px;
     background-color: #000!important;
+    z-index: 1;
 }
 
 #nav {
@@ -120,16 +129,172 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46.5px;
-    height: 400px;
-    background-color: aqua;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background-clip: padding-box;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 25px 0;
+    
+}
+
+#slider .text-description {
+    font-size: 15px;
+}
+
 
 #content {
-    height: 1000px;
-    background-color: #ccc;
+    
 }
 
+#content .content-section {
+    width: 800px;
+    padding: 64px 16px;
+    /* Tu dong can giua */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-style:italic;
+    text-align: center;
+    margin: 15px 0px;
+    opacity: 0.6;
+}
+
+/* The Band Section */
+#content .about-text {
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    padding: 32px 0px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 15px 0px;
+    
+}
+
+#content .member-img {
+    width: 154px;
+    height: 192px;
+    border-radius: 5px;
+}
+
+/* Tour Section */
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+
+.tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #333;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin: 16px;
+    
+}
+
+.tickets-list .quantity {
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Places-section */
+.places-list {
+    margin: 32px -8px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    
+}
+
+.place-img {
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+}
+
+.place-heading {
+
+}
+
+.palce-time {
+
+}
+
+.place-desc {
+
+}
+
+.place-buy-btn {
+
+}
+
+/* Footer Section */
 #footer {
 
 }
