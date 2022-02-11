@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" href="https://www.pngrepo.com/png/169365/512/musical-note.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -35,6 +36,10 @@
             <!--Begin: Search button-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!--End: Search button-->
         </div>
@@ -235,7 +240,35 @@
             event.stopPropagation();
         })
 
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
 
+        // Dong mo mobile menu
+
+
+        console.log(headerHeight)
+
+        mobileMenu.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose){
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        } 
+
+        //Tu dong dong khi chon phan tu trong menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for(var i = 0; i <menuItems.length; i++){
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
+        
     </script>
 </body>
 </html>

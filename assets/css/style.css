@@ -108,6 +108,7 @@ html {
     height: 46.5px;
     background-color: #000!important;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -176,7 +177,8 @@ html {
     font-size: 12px;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     float: right;
     line-height: 46.5px;
     padding: 0 16px 0 16px;
@@ -187,8 +189,17 @@ html {
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
 
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -230,6 +241,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%; /*Manh hon width*/
     padding: 64px 16px;
     /* Tu dong can giua */
     margin-left: auto;

@@ -1,0 +1,21 @@
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023){
+    
+}
+
+@media (max-width: 739px) {
+    #nav > li {
+        display: block;
+    }
+
+    #header .search-btn {
+        float: right;
+        line-height: 46.5px;
+        padding: 0 16px 0 16px;
+        display: none;
+    }
+}
