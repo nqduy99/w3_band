@@ -61,7 +61,6 @@ html {
 
 .btn {
     width: 109px;
-    /* height: 38px; */
     margin: 0px 0px 16px;
     padding: 11px 16px;
     color: #fff;
@@ -69,6 +68,8 @@ html {
     text-decoration: none;
     display: inline-block;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -216,7 +217,7 @@ html {
     position: relative;
     margin-top: 46.5px;
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     background-clip: padding-box;
 }
 
@@ -237,7 +238,8 @@ html {
 }
 
 #slider .text-description {
-    font-size: 15px;
+    font-size: 16px;
+    text-shadow: 0 0 1px #000;
 }
 
 
@@ -496,6 +498,15 @@ label.modal-label {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {

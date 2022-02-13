@@ -7,10 +7,35 @@
 @media (max-width: 1023px) {
     .btn {
         padding: 18px 16px;
+        font-size: 16px;
     }
 
     .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+
+    }
+
+    #footer .socials-list {
+        font-size: 48px;
+        
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright {
+        font-size: 32px;
+        padding: 18px 0;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
     }
 }
 
@@ -77,7 +102,7 @@
     }
 
     .contact-form {
-        margin-top: 16px;
+        margin-top: 32px;
     }
 
 
