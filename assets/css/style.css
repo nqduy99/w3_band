@@ -61,7 +61,7 @@ html {
 
 .btn {
     width: 109px;
-    height: 38px;
+    /* height: 38px; */
     margin: 0px 0px 16px;
     padding: 11px 16px;
     color: #fff;
@@ -108,7 +108,6 @@ html {
     height: 46.5px;
     background-color: #000!important;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -280,7 +279,8 @@ html {
 }
 
 #content .member-list {
-    padding: 32px 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 #content .member-name {
@@ -336,7 +336,7 @@ html {
 
 /* Places-section */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 

@@ -3,11 +3,48 @@
     
 }
 
+/* Tablet and mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 18px 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+}
+
 @media (min-width: 740px) and (max-width: 1023){
     
 }
 
 @media (max-width: 740px) {
+    .s-full-width {
+        width: 100% !important;
+    }
+    
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-16 {
+        margin-top: 8px !important;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .search-btn {
+        float: right;
+        line-height: 46.5px;
+        padding: 0 16px 0 16px;
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
     #nav {
         display: block;
     }
@@ -20,14 +57,28 @@
         display: inline-block;
     }
 
-    #header .search-btn {
-        float: right;
-        line-height: 46.5px;
-        padding: 0 16px 0 16px;
-        display: none;
+    #nav li a {
+        padding: 1px 24px;
     }
 
-    #header .mobile-menu-btn {
-        display: block;
+    #nav .subnav {
+        /* Gia tri mac dinh, bo di position: absolute */
+        position: initial; 
+        background-color: #333;
     }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 16px;
+    }
+
+
 }
